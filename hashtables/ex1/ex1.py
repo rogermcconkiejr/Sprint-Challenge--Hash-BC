@@ -21,7 +21,6 @@ def get_indices_of_item_weights(weights, length, limit):
         print(ht)
     for key in ht:
         hash_table_retrieve(ht, key)
-        checker = ht[key]
         if key + checker == limit:
             if ht[key] > checker[key]:
                 answer = (ht[key], checker[key])
